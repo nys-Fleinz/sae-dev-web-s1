@@ -1,0 +1,17 @@
+/*
+BLUE: #0081FB
+
+*/
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url("fonts/HelveticaNeue.ttf");
+}
+
+body {
+    font-family: "Helvetica Neue";
+}
+
+.navigation>div {
+    color: black;
+    font: helve;
+}
