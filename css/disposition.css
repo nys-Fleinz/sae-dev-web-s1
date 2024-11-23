@@ -5,7 +5,7 @@ body {
 
 header {
     background-color: #f5f5f5;
-    padding: 10px 20px;
+    padding: 1.1em;
 }
 
 .navigation {
@@ -29,6 +29,7 @@ header {
     color: black;
     transition: color 0.3s ease;
     text-align: center;
+    font-size: 1.2em;
 }
 
 .menu a:hover {
@@ -131,9 +132,10 @@ header {
 
 .stats {
     display: grid;
+    margin-top: 50px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    background-image: linear-gradient(white, white, rgb(248, 167, 255), rgba(169, 192, 255, 0.548), rgba(169, 192, 255, 0.548));
+    grid-template-rows: 4em 1fr;
+    background-image: linear-gradient(white, rgb(248, 167, 255), rgba(169, 192, 255, 0.548), rgba(169, 192, 255, 0.548));
 }
 
 .stats>h1 {
@@ -180,7 +182,7 @@ header {
 
 .avantages-header p {
     font-size: 1.2em;
-    color: #555;
+    color: #727272;
     margin-bottom: 30px;
 }
 
@@ -199,47 +201,108 @@ header {
     padding: 20px;
     flex: 1 1 calc(33% - 40px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.avantages-carte img {
-    max-width: 80px;
-    margin-bottom: 15px;
+#emissions {
+    background-image: url('../images/environnement.png');
 }
+
+#economies {
+    background-image: url('../images/economie.png');
+}
+
+#liens {
+    background-image: url('../images/liens.jpg');
+}
+
 
 .avantages-carte h3 {
-    color: #333;
+    color: white;
     font-size: 1.2em;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .avantages-carte p {
-    color: #666;
+    color: #ffffff;
     font-size: 1em;
+    text-shadow: 2px 1px 2px black;
     line-height: 1.5;
 }
 
-footer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    background-image: linear-gradient(white, #0003b51a);
+.actualite {
+    max-width: 600px;
+    text-align: center;
+    margin: auto auto 25px auto;
 }
 
-.footer-legal {
-    margin-right: 20px;
-    align-self: flex-end;
+.actualite>h1 {
+    font-size: 2em;
+    color: black;
+}
+
+.actualite>p {
+    color: #727272;
+    font-size: 1.1em;
+}
+
+.carte-reseaux {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.carte-reseau {
+    min-width: 87px;
+    max-width: 87px;
+    border-style: solid;
+    border-color: #005bb509;
+    border-width: 2px;
+    background-color: #0082fb25;
+    border-radius: 20px;
+    padding: 2px;
+    font-size: 1.1em;
+}
+
+
+footer {
+    display: flex;
+    background-color: #f0f4f6;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 footer>div {
-    margin-bottom: 25px;
-    margin-left: 20px;
+    flex: 1 1 auto;
+    margin: 10px;
 }
 
-.reaseaux {
+footer > div:first-child {
+    text-align: center; 
+}
+
+footer > div > img {
+    width: 100px;
+    height: auto;
+}
+
+.footer-reseaux {
     display: flex;
-    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: nowrap;
 }
 
-.reseaux>a>img {
+.footer-reseaux > a > img {
     width: 30px;
+    height: auto;
+}
+
+.footer-legal {
+    text-align: center;
+    font-size: 0.9em;
 }
