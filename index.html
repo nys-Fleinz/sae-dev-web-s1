@@ -13,7 +13,7 @@
     <header>
         <nav class="navigation">
             <div class="logo">
-                <img src="./images/tL_v571NdZ0.svg" alt="Meta Ride">
+                <img src="./images/metaLogo.svg" alt="Meta Ride">
             </div>
             <div class="menu">
                 <div class="menu-item"><a href="#">Accueil</a></div>
@@ -27,69 +27,115 @@
 
     <main>
         <section class="banner">
-            <img src="./images/banner.webp" alt="Banniere">
+            <img src="./images/banner.png" alt="Banniere">
             <section class="text-banner">
                 <h1>Simplifiez vos trajets, réduisez votre impact.</h1>
                 <div>
-                    <button>Proposer un Trajet</button>
-                    <button>Réserver un Véhicule</button>
+                    <button onclick="">Proposer un Trajet</button>
+                    <button onclick="">Réserver un Véhicule</button>
                 </div>
             </section>
-
         </section>
-            <section class="presentation">
-                <h1>Notre Mission</h1>
-                <p>MetaRide a été conçu pour répondre aux enjeux climatiques et favoriser une mobilité plus responsable. En mettant en avant des solutions de covoiturage et de location de moyens de transport écologiques, notre objectif est de réduire les émissions de carbone liées aux déplacements professionnels et personnels de nos collaborateurs.</p>
-                <h4>Découvrez notre Plan de Mobilité</h4>
-                <p>Notre Plan de Mobilité durable propose des initiatives concrètes pour transformer les habitudes de déplacement de manière responsable. Rejoignez-nous dans cette démarche en cliquant <a href="planmobilite.html">ici</a>.</p>
-            </section>
+
+        <section class="presentation">
+            <h1>Notre Mission</h1>
+            <p id="notreMissionTexte"><strong>MetaRide</strong> a été conçu pour répondre aux enjeux climatiques et
+                favoriser une
+                mobilité plus responsable. En mettant en avant des solutions de covoiturage et de location de moyens de
+                transport écologiques, notre
+                objectif est de réduire les émissions de carbone liées aux déplacements professionnels et personnels de
+                nos collaborateurs.</p>
+            <img id="imageMains" src="./images/mains.png">
+            <h4>Découvrez notre Plan de Mobilité</h4>
+            <p id="planMobiliteTexte">Notre Plan de Mobilité durable propose des initiatives concrètes pour transformer
+                les habitudes de
+                déplacement de manière responsable. Rejoignez-nous dans cette démarche en cliquant <a
+                    href="planmobilite.html">ici</a>.</p>
+            <img id="imageCovoiturage" src="./images/covoiturage.jpg">
+        </section>
 
 
-            <section class="stats">
-                <h1>Statistiques en temps réel</h1>
-                <p>Découvrez l'impact concret de MetaRide en un coup d'œil ! Ces données actualisées en temps réel illustrent la participation de nos collaborateurs, les trajets effectués, et les économies d’émissions de carbone réalisées grâce à notre plateforme. Ensemble, nous contribuons activement à une mobilité plus durable et respectueuse de l'environnement.</p>
-                <p><strong>1083</strong>kg de CO₂ réduit  | <strong>1002</strong> trajets partagés | <strong>2056</strong> véhicules électriques loués</p>
-            </section>
+        <section class="stats">
+            <h1>Statistiques en temps réel</h1>
+            <p>Découvrez l'impact concret de MetaRide en un coup d'œil ! Ces données actualisées en temps réel
+                illustrent la participation de nos collaborateurs, les trajets effectués, et les économies d’émissions
+                de carbone réalisées grâce à notre plateforme. Ensemble, nous contribuons activement à une mobilité plus
+                durable et respectueuse de l'environnement.</p>
+            <ul>
+                <li><strong>1083kg</strong><br>C'est la masse de CO₂ évité grâce à vos efforts</li>
+                <li><strong>1002</strong><br>trajets partagés</li>
+                <li><strong>2056</strong><br>véhicules électriques loués</li>
+            </ul>
+        </section>
 
 
-            <section class="avantages">
-                <h1>Avantages de la Mobilité Partagée et Écologique</h1>
+        <section class="avantages">
+            <div class="avantages-header">
+                <h1>Avantages</h1>
                 <p>Adopter la mobilité partagée et écologique avec MetaRide, c'est choisir une alternative responsable et bénéfique pour tous :</p>
-                <ul>
-                    <li>Réduction de l'empreinte carbone : Chaque trajet partagé ou effectué avec des moyens de transport écologiques diminue les émissions de gaz à effet de serre.</li>
-                    <li>Économies financières : Réduisez vos frais de déplacement en partageant les coûts avec d'autres collaborateurs.</li>
-                    <li>Gain de temps et praticité : Profitez d'une organisation simplifiée des trajets et d'une plateforme dédiée pour planifier vos déplacements.</li>
-                    <li>Amélioration des relations professionnelles : Favorisez la collaboration et créez des liens en partageant vos trajets avec vos collègues.</li>
-                    <li>Contribution à une entreprise plus verte : Participez activement à nos objectifs de durabilité et faites partie du changement.</li>
-                </ul>
-                <p>MetaRide, bien plus qu'une plateforme, est une étape vers un futur plus durable et collaboratif.</p>
+            </div>
+            <div class="avantages-cartes">
+                <div class="avantages-carte">
+                    <img src="./images/environment.png" alt="Environnement">
+                    <h3>Réduction des émissions</h3>
+                    <p>Diminuer votre empreinte carbone en partageant vos trajets ou en utilisant des moyens de transport écologiques.</p>
+                </div>
+                <div class="avantages-carte">
+                    <img src="./images/economy.png" alt="Économie">
+                    <h3>Économies financières</h3>
+                    <p>Réduisez vos frais de déplacement grâce au partage des trajets et à la location économique de véhicules.</p>
+                </div>
+                <div class="avantages-carte">
+                    <img src="./images/community.png" alt="Communauté">
+                    <h3>Renforcement des liens</h3>
+                    <p>Créer une communauté solidaire et renforcer les relations entre collègues grâce à des trajets partagés.</p>
+                </div>
+            </div>
+        </section>
+        
+
+
+
+
+        <section class="actualite">
+            <h1>Actualités</h1>
+            <p>Pour suivre nos actualités rejoignez-nous sur les réseaux:</p>
+            <section class="news">
+                <table>
+                    <tr>
+                        <th>Instagram</th>
+                        <th>Facebook</th>
+                        <th>𝕏</th>
+                    </tr>
+                    <tr>
+                        <td><a href="https://instagram.com/metaride"><img src="./images/instagram.png"
+                                    alt="Instagram"></a></td>
+                        <td><a href="https://facebook.com/metaride"><img src="./images/facebook.png" alt="Facebook"></a>
+                        </td>
+                        <td><a href="https://x.com/metaride"><img src="./images/twitter.png" alt="Twitter"></a></td>
+                    </tr>
+                </table>
             </section>
-            <section class="actualite">
-                <h1>Actualités</h1>
-                <section class="news">
-                    <blockquote class="twitter-tweet" data-lang="fr" data-theme="dark"><p lang="fr" dir="ltr">Trafics de Vinci 🇫🇷 Autoroutes 🛣 et Airports 🛫 - Octobre 24<br><br>🔶️ Pour les aéroports 🛫 la tendance est plutôt bonne depuis plusieurs mois<br>➡️ Belle progression vs 2023 👍<br><br>Mais aussi vs 2019 <br>➡️ année pré Covid qui sert de référence <br><br>🔶️ Pour les autoroutes 🛣 on stagne avec… <a href="https://t.co/RgOUmaXpup">pic.twitter.com/RgOUmaXpup</a></p>&mdash; L&#39;iguane 🦎 (@IguanoDeLaBolsa) <a href="https://twitter.com/IguanoDeLaBolsa/status/1859123684293611889?ref_src=twsrc%5Etfw">November 20, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    <blockquote class="twitter-tweet" data-lang="fr" data-theme="dark"><p lang="fr" dir="ltr">📍 Roazhon Park, me voilà 🥰<br><br>Un Rennes-Lens bien alléchant au rendez-vous, avec un stade qui s’annonce bien rempli et un parcage plein à craquer, ça va être bouillant 🔥<br><br>🔹 Pour le petit point statistiques, 6ème fois pour moi au Roazhon Park, après 350 kilomètres en covoiturage… <a href="https://t.co/Hky4U0wmsR">pic.twitter.com/Hky4U0wmsR</a></p>&mdash; Foot Multiple (@footmultiple) <a href="https://twitter.com/footmultiple/status/1837538648465522808?ref_src=twsrc%5Etfw">21 septembre 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-                    <blockquote class="twitter-tweet" data-lang="fr" data-theme="dark"><p lang="fr" dir="ltr">Cet appel à projets a ainsi permis de labelliser des solutions de <a href="https://twitter.com/hashtag/covoiturage?src=hash&amp;ref_src=twsrc%5Etfw">#covoiturage</a> répondant à un certain nombre de critères : Couverture des <a href="https://twitter.com/AlpesMaritimes?ref_src=twsrc%5Etfw">@AlpesMaritimes</a> et de Monaco ; Outils mobiles ; Ergonomie ; Protection des utilisateurs ; Statistiques exploitables par les partenaires <a href="https://t.co/NmQ7vkDXVc">pic.twitter.com/NmQ7vkDXVc</a></p>&mdash; Charles Ange Ginésy (@ca_ginesy) <a href="https://twitter.com/ca_ginesy/status/981928196974182402?ref_src=twsrc%5Etfw">April 5, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-                </section>
-            </section>
+        </section>
     </main>
-
-
-
-    <footer>
-        <img src="images/tL_v571NdZ0.svg" alt="Logo Meta">
-        <ul>
-            <li><a href="Plan de Mobilité.html">Plan de Mobilité</a></li>
-            <li><a href="FAQs.html">FAQs</a></li>
-            <li><a href="Contactez-nous.html">Contactez-nous</a></li>
-            <li>
-                <a href="https://instagram.com/metaride"><img src="instagram.png" alt="Instagram"></a>
-                <a href="https://facebook.com/metaride"><img src="facebook.png" alt="Facebook"></a>
-                <a href="https://x.com/metaride"><img src="x.png" alt="Twitter"></a>
-            </li>
-        </ul>
-        <p>Liens utiles : "Plan de Mobilité," "FAQs," "Contactez-nous," et "Politique de Confidentialité." Réseaux sociaux : Icônes pour les réseaux internes ou autres canaux de communication.</p>
-    </footer>
 </body>
+
+
+
+<footer>
+    <div>
+        <img src="images/metaLogo.svg" alt="Logo Meta">
+        <p>Suivez-nous</p>
+        <div class="reseaux">
+            <a href="https://instagram.com/metaride"><img src="./images/instagram.png" alt="Instagram"></a>
+            <a href="https://facebook.com/metaride"><img src="./images/facebook.png" alt="Facebook"></a>
+            <a href="https://x.com/metaride"><img src="./images/twitter.png" alt="Twitter"></a>
+        </div>
+    </div>
+    <div class="footer-legal">
+        <p>© 2024 MetaRide. Tous droits réservés. | <a href="#">Mentions légales</a> | <a href="#">Politique de
+                confidentialité</a></p>
+    </div>
+</footer>
 
 </html>
