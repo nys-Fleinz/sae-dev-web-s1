@@ -89,24 +89,23 @@ header {
 }
 
 .option-trajet {
-    width: 50%;
-    max-width: 100%;
     text-align: center;
+    flex: 1;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-items: center;
     justify-content: center;
 }
 
-.option-trajet>button {
-    position: absolute;
+#proposerTrajet {
+    background-image: url("../images/covoiturage.jpg");
+    background-repeat: no-repeat;
+    height: ;
 }
 
 .option-trajet img {
     max-width: 100%;
-    max-height: 100%;
-    min-height: 70%;
+    height: 200px;
 }
 
 .option-trajet button {
