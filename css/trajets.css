@@ -79,6 +79,7 @@ header {
     background-color: #005bb5;
 }
 
+
 /*--- CHOIX ---*/
 
 .options {
@@ -102,10 +103,10 @@ header {
     position: absolute;
 }
 
-
-
 .option-trajet img {
-    width: 100%; /* L'image occupe toute la largeur de la carte */
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 70%;
 }
 
 .option-trajet button {
@@ -124,8 +125,6 @@ header {
 }
 
 /*--- CHOIX ---*/
-
-
 
 
 footer {
