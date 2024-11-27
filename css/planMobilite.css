@@ -1,3 +1,4 @@
+/* HEADER */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -63,66 +64,71 @@ header {
     margin: 0;
     font-size: 4vw;
 }
+/* HEADER */
 
-.text-banner button {
-    background-color: #0081FB;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-}
+/* MAIN */
 
-.text-banner button:hover {
-    background-color: #005bb5;
-}
+/* OBJECTIFS */
 
 
-/*--- CHOIX ---*/
-
-.options {
+.arguments {
     display: flex;
-    gap: 10px;
-    margin: 1%;
-}
-
-.option {
-    text-align: center;
-    flex: 1;
-    height: 100%;
-    display: flex;
+    margin: 20px auto;
+    flex-direction: column;
     align-items: center;
-    justify-items: center;
-    justify-content: center;
+    max-width: 50%;
 }
 
-.option>img {
-    height: 100%;
-    width: 100%;
-    filter: blur(1px) brightness(50%);
+.arguments>h1{
+    font-size: 2em;
+}
+
+.arguments>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+}
+
+.arguments>div>div>img {
     border-radius: 20px;
 }
 
 
-.option button {
-    padding: 10px 20px;
-    background-color: #02294e;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 2vw;
-    position: absolute;
+/* AVIS */
+/* <section class="engagements">
+            <h1>Engagement des Employés</h1>
+            <div>
+                <div class="boite-avis">
+                    <img src="../images/facebook.png" alt="">
+                    <p>avis</p>
+                </div>
+                <div class="boite-avis">
+                    <img src="../images/facebook.png" alt="">
+                    <p>avis</p>
+                </div>
+                <div class="boite-avis">
+                    <img src="../images/facebook.png" alt="">
+                    <p>avis</p>
+                </div>
+            </div>
+        </section> */
+.engagements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.engagements>h1 {
+    font-size: 2em;
 }
 
-.option button:hover {
-    background-color: #005bb5;
+.engagements>div {
+    display: flex;
 }
 
-/*--- CHOIX ---*/
+/* MAIN */
 
+/* FOOTER */
 
 footer {
     display: flex;
@@ -164,3 +170,4 @@ footer > div > img {
     text-align: center;
     font-size: 0.9em;
 }
+/* FOOTER */
