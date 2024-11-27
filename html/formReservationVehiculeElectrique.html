@@ -1,0 +1,116 @@
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="../css/form.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation véhicule électrique</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <div class="logo">
+                <img src="../images/metaLogo.svg" alt="Meta Ride">
+            </div>
+            <div class="menu">
+                <div class="menu-item"><a href="#">Accueil</a></div>
+                <div class="menu-item"><a href="#">Trajets</a></div>
+                <div class="menu-item"><a href="#">Locations</a></div>
+                <div class="menu-item"><a href="#">Plan de mobilité</a></div>
+                <div class="menu-item"><a href="#">Contact</a></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <form action="" method="get" class="form">
+            <fieldset>
+                <legend>Réserver votre trajet</legend>
+                <select name="vehicules" id="typeVehiculeSelect">
+                    <option value="">--Type du véhicue--</option>
+                    <option value="trotinette">Trotinette</option>
+                    <option value="velo">Vélo</option>
+                </select>
+                <select name="modele" id="modeleVehiculeSelect">
+                    <option value="electrique">Electrique</option>
+                    <option value="classique">Classique</option>
+                </select>
+                <fieldset>
+                    <legend>Vous</legend>
+                    <label for="nomEmploye">Nom & Prénom: <input type="text"></label>
+                    <label for="numEmploye">Identifiant Employé: <input type="number"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Date</legend>
+                    <fieldset>
+                        <legend>Départ</legend>
+                        <label for="dateDepart">Date: <input type="date"></label>
+                        <label for="heureDepart">Heure: <input type="time"></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Fin</legend>
+                        <label for="dateFin">Date: <input type="date"></label>
+                        <label for="heureFin">Heure: <input type="time"></label>
+                    </fieldset>
+                </fieldset>
+                <fieldset>
+                    <legend>Contact</legend>
+                    <label for="telEmplye">Tel: <input type="tel"></label>
+                    <label for="emailEmploye">Email: <input type="email"></label>
+                    <label for="preference">Préférence: <select>
+                            <option value="">--Tel ou Email--</option>
+                            <option value="telPref">Tel</option>
+                            <option value="emailPref">Email</option>
+                        </select></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Lieu</legend>
+                    <label for="lieuPriseEnCharge">Point de prise en charge: <select>
+                            <option value="">--Choix du Parking--</option>
+                            <option value="Parking1">Parking 1</option>
+                            <option value="Parking2">Parking 2</option>
+                            <option value="Parking3">Parking 3</option>
+                        </select></label>
+                    <label for="lieuDeRetour">Point de retour:<select>
+                            <option value="">--Choix du Parking--</option>
+                            <option value="Parking1">Parking 1</option>
+                            <option value="Parking2">Parking 2</option>
+                            <option value="Parking3">Parking 3</option>
+                        </select></label>
+                </fieldset>
+            </fieldset>
+            <fieldset>
+                <legend>Confirmation</legend>
+                <label for="conditions">J'ai lu et accepte les <a href="#">conditions de location</a><input type="checkbox" name="" id=""></label>
+                <label for="dommages">Je suis responsable en cas de dommage de véhicule <input type="checkbox"></label>
+                <fieldset class="bouttons">
+                    <input type="button" value="Réserver">
+                    <input type="button" value="Annuler">
+                </fieldset>
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+<footer>
+    <div>
+        <img src="../images/metaLogo.svg" alt="Logo Meta">
+    </div>
+    <div>
+        <p>Suivez-nous</p>
+        <div class="footer-reseaux">
+            <a target="_blank" href="https://instagram.com/metaride"><img src="../images/instagram.png"
+                    alt="Instagram"></a>
+            <a target="_blank" href="https://facebook.com/metaride"><img src="../images/facebook.png"
+                    alt="Facebook"></a>
+            <a target="_blank" href="https://x.com/metaride"><img src="../images/twitter.png" alt="Twitter"></a>
+        </div>
+    </div>
+    <div class="footer-legal">
+        <p>© 2024 MetaRide. Tous droits réservés. | <a href="#">Mentions légales</a> | <a href="#">Politique de
+                confidentialité</a></p>
+    </div>
+</footer>
+
+</html>
