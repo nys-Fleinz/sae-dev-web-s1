@@ -21,7 +21,7 @@ header {
     display: flex;
     flex-grow: 1;
     justify-content: space-evenly;
-    margin-inline: 10%;
+    margin-inline: 190px;
 }
 
 .menu a {
@@ -45,9 +45,9 @@ header {
 
 .banner img {
     width: 100%;
-    height: auto;
+    height: 500px;
     display: block;
-    filter: blur(2px) brightness(40%);
+    filter: blur(2px) brightness(50%);
 }
 
 .text-banner {
@@ -61,53 +61,79 @@ header {
 
 .text-banner h1 {
     margin: 0;
-    font-size: 4vw;
+    font-size: 2.5rem;
 }
 
 
-
-/*--- CHOIX ---*/
-
-.options {
+.partie {
     display: flex;
-    gap: 10px;
-    margin: 1%;
-}
-
-.option {
-    text-align: center;
-    flex: 1;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-items: center;
+    margin: 20px auto;
+    max-width: 600px;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 10px;
 }
 
-.option>img {
-    height: 100%;
-    width: 100%;
-    filter: blur(1px) brightness(50%);
-    border-radius: 20px;
+.partie>h1 {
+    font-size: 2em;
+    margin-bottom: 0px;
 }
 
-
-.option>button {
-    padding: 10px 20px;
+.partie button {
     background-color: #0081FB;
-    color: white;
-    border: none;
-    border-radius: 5px;
+    border: solid #005bb58f 2px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1em;
+    margin: auto 5px auto 5px;
+    text-shadow: #f0f4f6 1px 0 10px;
     cursor: pointer;
-    font-size: 1.5vw;
-    position: absolute;
 }
 
-.option button:hover {
+.partie button:hover {
     background-color: #005bb5;
 }
 
-/*--- CHOIX ---*/
+
+
+.actualite {
+    max-width: 600px;
+    text-align: center;
+    margin: auto auto 25px auto;
+}
+
+.actualite>h1 {
+    font-size: 2em;
+    color: black;
+}
+
+.actualite>p {
+    color: #727272;
+    font-size: 1.1em;
+}
+
+.carte-reseaux {
+    display: flex;
+    justify-content: space-evenly;
+}
+.carte-reseaux * {
+    text-decoration: none;
+    color: #727272;
+}
+.carte-reseau {
+    min-width: 87px;
+    max-width: 87px;
+    border-style: solid;
+    border-color: #005bb509;
+    border-width: 2px;
+    background-color: #0082fb25;
+    border-radius: 20px;
+    padding: 2px;
+    font-size: 1.1em;
+}
+
 
 
 footer {
