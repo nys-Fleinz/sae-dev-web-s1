@@ -74,6 +74,10 @@ header {
     align-items: center;
     text-align: center;
     row-gap: 10px;
+    border: 0.25em outset rgba(128, 128, 128, 0.192);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #0a0c0e0a;
 }
 
 .partie>h1 {

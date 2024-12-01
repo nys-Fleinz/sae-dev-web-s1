@@ -92,6 +92,7 @@ header {
     grid-row: 1/3;
     width: 323px;
     border-radius: 20px;
+    justify-self: center;
 }
 
 .presentation>h1 {
@@ -113,6 +114,7 @@ header {
     grid-row: 3/5;
     width: 323px;
     border-radius: 20px;
+    justify-self: center;
 }
 
 .presentation>h4 {
@@ -250,6 +252,10 @@ header {
 .carte-reseaux {
     display: flex;
     justify-content: space-evenly;
+}
+.carte-reseaux>a {
+    text-decoration: none;
+    color: #727272;
 }
 
 .carte-reseau {

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="../css/form.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche de Trajet</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <div class="logo">
+                <img src="../images/metaLogo.svg" alt="Meta Ride">
+            </div>
+            <div class="menu">
+                <div class="menu-item"><a href="#">Accueil</a></div>
+                <div class="menu-item"><a href="#">Trajets</a></div>
+                <div class="menu-item"><a href="#">Locations</a></div>
+                <div class="menu-item"><a href="#">Plan de mobilité</a></div>
+                <div class="menu-item"><a href="#">Contact</a></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <form action="../html/confirmation.html" method="get" class="form">
+            <fieldset>
+                <legend>Informations sur le Trajet</legend>
+                <label for="pointDepart">Point de Départ : 
+                    <input type="text" id="pointDepart" name="pointDepart" placeholder="Adresse" required>
+                </label>
+                <label for="destination">Destination : 
+                    <input type="text" id="destination" name="destination" placeholder="Adresse" required>
+                </label>
+                <label for="dateTrajet">Date du Trajet : 
+                    <input type="date" id="dateTrajet" name="dateTrajet" required>
+                </label>
+                <label for="heureDepart">Heure de Départ : 
+                    <input type="time" id="heureDepart" name="heureDepart" required>
+                </label>
+                <label for="tel">Tel : 
+                    <input type="tel" id="tel" name="tel" placeholder="Tel" required>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Préférences de Trajet</legend>
+                <label><input type="checkbox" name="flexibilite" value="flexibilite"> Flexibilité Horaire</label>
+                <label><input type="checkbox" name="allerRetour" value="allerRetour"> Aller-retour</label>
+                <label><input type="checkbox" name="recurrent" value="recurrent"> Trajet récurrent</label>
+                <label><input type="checkbox" name="sansFumeur" value="sansFumeur"> Sans fumeur</label>
+                <label><input type="checkbox" name="electrique" value="electrique"> Véhicule électrique</label>
+            </fieldset>
+
+            <div class="boutons">
+                <button type="submit">Rechercher</button>
+                <a href="../index.html"><button type="button">Annuler</button></a>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div>
+            <img src="../images/metaLogo.svg" alt="Logo Meta">
+        </div>
+        <div>
+            <p>Suivez-nous</p>
+            <div class="footer-reseaux">
+                <a target="_blank" href="https://instagram.com/metaride"><img src="../images/instagram.png" alt="Instagram"></a>
+                <a target="_blank" href="https://facebook.com/metaride"><img src="../images/facebook.png" alt="Facebook"></a>
+                <a target="_blank" href="https://x.com/metaride"><img src="../images/twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+        <div class="footer-legal">
+            <p>© 2024 MetaRide. Tous droits réservés. | <a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="../css/form.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'assistance et retours</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <div class="logo">
+                <img src="../images/metaLogo.svg" alt="Meta Ride">
+            </div>
+            <div class="menu">
+                <div class="menu-item"><a href="#">Accueil</a></div>
+                <div class="menu-item"><a href="#">Trajets</a></div>
+                <div class="menu-item"><a href="#">Locations</a></div>
+                <div class="menu-item"><a href="#">Plan de mobilité</a></div>
+                <div class="menu-item"><a href="#">Contact</a></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <form action="../html/confirmation.html" method="post" class="form">
+            <fieldset>
+                <legend>Demande</legend>
+
+                <label for="name">Nom & Prénom:</label>
+                <input type="text" id="name" placeholder="Nom et prénom" required>
+                <br>
+
+                <label for="email">Adresse e-mail professionnelle:</label>
+                <input type="email" id="email" placeholder="Email" required>
+                <br>
+
+                <label for="type">Type:</label>
+                <select id="type" required>
+                    <option value="">--Sélectionnez--</option>
+                    <option value="technique">Assistance Technique</option>
+                    <option value="reservation">Problème de Réservation</option>
+                    <option value="facturation">Problème de Facturation</option>
+                    <option value="suggestion">Suggestion d'Amélioration</option>
+                    <option value="autre">Autre</option>
+                </select>
+                <br>
+
+                <label for="titre">Titre:</label>
+                <input type="text" id="titre" placeholder="Objet" required>
+                <br>
+
+                <label for="description">Description détaillée:</label>
+                <textarea id="description" rows="5" placeholder="Description" required></textarea>
+                <br>
+
+                <label for="file">Télécharger une pièce jointe:</label>
+                <input type="file" id="file" accept=".pdf,.jpg,.png,.docx">
+                <br>
+
+                <label for="numero">Numéro de réservation ou de trajet:</label>
+                <input type="text" id="numero" placeholder="Numéro">
+                <br>
+
+                <label for="urgence">Niveau d'urgence:</label>
+                <select id="urgence" required>
+                    <option value="faible">Faible</option>
+                    <option value="moyenne">Moyenne</option>
+                    <option value="elevee">Élevée</option>
+                </select>
+                <br>
+
+                <label>
+                    <input type="checkbox" required>
+                    J'accepte le traitement de mes informations conformément à la politique de confidentialité.
+                </label>
+                <br>
+
+            </fieldset>
+            <div class="boutons">
+                <button type="submit">Réserver</button>
+                <a href="../index.html"><button type="button">Annuler</button></a>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div>
+            <img src="../images/metaLogo.svg" alt="Logo Meta">
+        </div>
+        <div>
+            <p>Suivez-nous</p>
+            <div class="footer-reseaux">
+                <a target="_blank" href="https://instagram.com/metaride"><img src="../images/instagram.png" alt="Instagram"></a>
+                <a target="_blank" href="https://facebook.com/metaride"><img src="../images/facebook.png" alt="Facebook"></a>
+                <a target="_blank" href="https://x.com/metaride"><img src="../images/twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+        <div class="footer-legal">
+            <p>© 2024 MetaRide. Tous droits réservés. | <a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
