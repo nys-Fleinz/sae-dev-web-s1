@@ -15,32 +15,53 @@
                 <img src="../images/metaLogo.svg" alt="Meta Ride">
             </div>
             <div class="menu">
-                <div class="menu-item"><a href="#">Accueil</a></div>
-                <div class="menu-item"><a href="#">Trajets</a></div>
-                <div class="menu-item"><a href="#">Locations</a></div>
-                <div class="menu-item"><a href="#">Plan de mobilité</a></div>
-                <div class="menu-item"><a href="#">Contact</a></div>
+                <div class="menu-item"><a href="../index.html">Accueil</a></div>
+                <div class="menu-item"><a href="./trajets.html">Trajets</a></div>
+                <div class="menu-item"><a href="./locations.html">Locations</a></div>
+                <div class="menu-item"><a href="./planMobilite.html">Plan de mobilité</a></div>
+                <div class="menu-item"><a href="./contact.html">Contact</a></div>
             </div>
         </nav>
     </header>
 
     <main>
-        <form action="../html/confirmation.html" method="post" class="form">
+        <form action="../html/exempleResultatVehicule.html" method="post" class="form">
             <fieldset>
-                <legend>Réserver votre trajet</legend>
+                <legend>Réserver votre véhicule</legend>
 
                 <label for="typeVehicule">Type de véhicule :</label>
                 <select name="vehicules" id="typeVehicule" required>
                     <option value="">--Sélectionnez--</option>
                     <option value="trottinette">Trottinette</option>
                     <option value="velo">Vélo</option>
+                    <option value="voiture">Voiture</option>
+                </select>
+
+                <label for="marqueVehicule">Marque (si voiture) :</label>
+                <select name="marque" id="marqueVehicule" required>
+                    <option value="">--Sélectionnez--</option>
+                    <option value="tesla">Tesla</option>
+                    <option value="toyota">Toyota</option>
+                    <option value="renault">Renault</option>
+                    <option value="peugeot">Peugeot</option>
                 </select>
 
                 <label for="modeleVehicule">Modèle :</label>
                 <select name="modele" id="modeleVehicule" required>
                     <option value="">--Sélectionnez--</option>
                     <option value="electrique">Électrique</option>
-                    <option value="classique">Classique</option>
+                    <option value="hybride">Hybride</option>
+                    <option value="essence">Essence</option>
+                    <option value="diesel">Diesel</option>
+                </select>
+
+                <label for="optionsVehicule">Options :</label>
+                <select name="options" id="optionsVehicule" required>
+                    <option value="">--Sélectionnez--</option>
+                    <option value="gps">GPS</option>
+                    <option value="climatisation">Climatisation</option>
+                    <option value="siegesChauffants">Sièges chauffants</option>
+                    <option value="autopilote">Autopilote</option>
                 </select>
 
                 <fieldset>
@@ -70,22 +91,6 @@
                         <label for="heureFin">Heure :</label>
                         <input type="time" id="heureFin" name="heureFin" required>
                     </div>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Contact</legend>
-                    <label for="telEmploye">Téléphone :</label>
-                    <input type="tel" id="telEmploye" name="telEmploye" placeholder="Ex : 06 12 34 56 78" required>
-
-                    <label for="emailEmploye">Email :</label>
-                    <input type="email" id="emailEmploye" name="emailEmploye" placeholder="Ex : employe@entreprise.com" required>
-
-                    <label for="preferenceContact">Préférence de contact :</label>
-                    <select name="preference" id="preferenceContact" required>
-                        <option value="">--Sélectionnez--</option>
-                        <option value="tel">Téléphone</option>
-                        <option value="email">Email</option>
-                    </select>
                 </fieldset>
 
                 <fieldset>
@@ -139,7 +144,8 @@
             </div>
         </div>
         <div class="footer-legal">
-            <p>© 2024 MetaRide. Tous droits réservés. | <a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></p>
+            <p>© 2024 MetaRide. Tous droits réservés. | <a href="./mentionLegales.html">Mentions légales</a> | <a href="./politiqueConfidentialite.html">Politique de
+                confidentialité</a></p>
         </div>
     </footer>
 </body>

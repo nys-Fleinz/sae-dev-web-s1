@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="../css/form.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposer un Véhicule</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <div class="logo">
+                <img src="../images/metaLogo.svg" alt="Meta Ride">
+            </div>
+            <div class="menu">
+                <div class="menu-item"><a href="../index.html">Accueil</a></div>
+                <div class="menu-item"><a href="./trajets.html">Trajets</a></div>
+                <div class="menu-item"><a href="./locations.html">Locations</a></div>
+                <div class="menu-item"><a href="./planMobilite.html">Plan de mobilité</a></div>
+                <div class="menu-item"><a href="./contact.html">Contact</a></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <form action="../html/confirmation.html" method="post" class="form">
+            <fieldset>
+                <legend>Informations sur le Véhicule</legend>
+                <label for="marque">Marque :
+                    <input type="text" id="marque" name="marque" placeholder="Ex: Tesla" required>
+                </label>
+                <label for="modele">Modèle :
+                    <input type="text" id="modele" name="modele" placeholder="Ex: Model 3" required>
+                </label>
+                <label for="annee">Année de fabrication :
+                    <input type="number" id="annee" name="annee" placeholder="Ex: 2022" required>
+                </label>
+                <label for="type">Type de véhicule :
+                    <select id="type" name="type" required>
+                        <option value="berline">Berline</option>
+                        <option value="suv">SUV</option>
+                        <option value="citadine">Citadine</option>
+                        <option value="utilitaire">Utilitaire</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </label>
+                <label for="places">Nombre de places disponibles :
+                    <input type="number" id="places" name="places" placeholder="Ex: 4" max="8" required>
+                </label>
+                <label for="energie">Type de carburant :
+                    <select id="energie" name="energie" required>
+                        <option value="electrique">Électrique</option>
+                        <option value="hybride">Hybride</option>
+                        <option value="essence">Essence</option>
+                        <option value="diesel">Diesel</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Disponibilités</legend>
+                <label for="dateDispoDebut">Date de début :
+                    <input type="date" id="dateDispoDebut" name="dateDispoDebut" required>
+                </label>
+                <label for="dateDispoFin">Date de fin :
+                    <input type="date" id="dateDispoFin" name="dateDispoFin" required>
+                </label>
+                <label for="tarif">Tarif par jour (€) :
+                    <input type="number" id="tarif" name="tarif" placeholder="Ex: 50" required>
+                </label>
+                <label for="description">Description du véhicule (options, état, etc.) :<br>
+                    <textarea id="description" name="description" rows="5" cols="66" placeholder="Ajoutez une description" required></textarea>
+                </label>
+            </fieldset>
+
+            <div class="boutons">
+                <button type="submit">Proposer</button>
+                <a href="../index.html"><button type="button">Annuler</button></a>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div>
+            <img src="../images/metaLogo.svg" alt="Logo Meta">
+        </div>
+        <div>
+            <p>Suivez-nous</p>
+            <div class="footer-reseaux">
+                <a target="_blank" href="https://instagram.com/metaride"><img src="../images/instagram.png" alt="Instagram"></a>
+                <a target="_blank" href="https://facebook.com/metaride"><img src="../images/facebook.png" alt="Facebook"></a>
+                <a target="_blank" href="https://x.com/metaride"><img src="../images/twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+        <div class="footer-legal">
+            <p>© 2024 MetaRide. Tous droits réservés. | <a href="./mentionLegales.html">Mentions légales</a> | <a href="./politiqueConfidentialite.html">Politique de
+                confidentialité</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
