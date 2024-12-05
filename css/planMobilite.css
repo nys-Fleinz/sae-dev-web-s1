@@ -1,36 +1,50 @@
-/* HEADER */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
+/* HEADER */
 header {
-    background-color: #f5f5f5;
+    background-color: #f0f4f6;
     padding: 1.1em;
+    box-sizing: border-box;
 }
 
 .navigation {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .logo img {
-    height: 15px;
+    height: 25px; 
+    max-width: 100%;
 }
 
 .menu {
     display: flex;
     flex-grow: 1;
     justify-content: space-evenly;
-    margin-inline: 10%;
+    flex-wrap: wrap;
+    margin-inline: 10px;
+}
+
+.menu-item {
+    flex: 1 1 auto;
+    min-width: 100px;
+    text-align: center;
 }
 
 .menu a {
     text-decoration: none;
     color: black;
-    transition: color 0.3s ease;
+    transition: color 1s ease;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
+    display: block;
+    padding: 5px;
+    word-wrap: break-word;
 }
 
 .menu a:hover {
@@ -39,13 +53,18 @@ header {
     text-decoration-thickness: 3px;
 }
 
+/* HEADER */
+
+
 .banner {
     position: relative;
     text-align: center;
 }
 
 .banner img {
-    width: 100%;
+    width: 65%;
+    border-radius: 20px;
+    margin: 25px auto;
     height: auto;
     display: block;
     filter: blur(2px) brightness(40%);
@@ -64,72 +83,71 @@ header {
     margin: 0;
     font-size: 4vw;
 }
-/* HEADER */
 
 /* MAIN */
 
 /* OBJECTIFS */
 
-
 .arguments {
     display: flex;
-    margin: 20px auto;
+    justify-content: center;
+    text-align: center;
     flex-direction: column;
-    align-items: center;
-    max-width: 60%;
-}
-
-
-.arguments>h1{
-    font-size: 2em;
+    border-bottom: 5px solid gray;
+    margin: 45px auto;
+    max-width: 80%;
+    padding-bottom: 20px;
 }
 
 .arguments>div {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-    gap: 5%;
-    border-bottom: solid grey;
 }
 
 .arguments>div>div {
-    max-width: 323px;
-}
-.arguments>div>div>p {
-    color: gray;
-    font-size: 1.4em;
+    flex: 1;
 }
 
-.arguments>div>div>img {
+.arguments>p {
+    color: black;
+    font-size: 1.3rem;
+}
+
+.arguments img {
+    text-align: center;
     border-radius: 20px;
-    max-width: 100%;
-    min-width: 140px;
+    width: 50%;
+    min-width: 50%;
+}
+
+.arguments>div p, .arguments>div ul {
+    text-align: justify;
+    color: grey;
+    font-size: 1.2em;
+}
+
+.arguments>div li {
+    margin: 4% auto;
 }
 
 
-/* AVIS */
-/* <section class="engagements">
-            <h1>Engagement des Employés</h1>
-            <div>
-                <div class="boite-avis">
-                    <img src="../images/facebook.png" alt="">
-                    <p>avis</p>
-                </div>
-                <div class="boite-avis">
-                    <img src="../images/facebook.png" alt="">
-                    <p>avis</p>
-                </div>
-                <div class="boite-avis">
-                    <img src="../images/facebook.png" alt="">
-                    <p>avis</p>
-                </div>
-            </div>
-        </section> */
+
+
+
+
+
+
+
+
+
+
 .engagements {
     display: flex;
     flex-direction: column;
     margin: 0px auto;
-    max-width: 60%;
+    max-width: 80%;
     text-align: center;
 }
 .engagements>h1 {
@@ -150,7 +168,32 @@ header {
     margin-inline: 1%;
     margin-bottom: 45px;
     font-size: 1.2em;
-    max-width: 323px;
+    flex: 1;
+}
+
+@media screen and (max-width:750px) {
+
+    .engagements>div {
+        flex-direction: column;
+    }
+    .boite-avis {
+        max-width: 100%;
+    }
+
+    .arguments img {
+        display: none;
+    }
+
+    .arguments>div {
+        flex-direction: column;
+    }
+
+    .arguments>div>div {
+        flex: 1;
+        width: 100%;
+    }
+
+
 }
 
 /* MAIN */
