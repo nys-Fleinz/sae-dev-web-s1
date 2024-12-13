@@ -238,6 +238,12 @@ footer > div > img {
     flex-wrap: nowrap;
 }
 
+textarea{
+    resize: vertical;
+    width: 99%;
+    border-radius: 5px;
+}
+
 .footer-reseaux > a > img {
     width: 30px;
     height: auto;
