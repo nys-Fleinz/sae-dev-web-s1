@@ -171,7 +171,6 @@ main .form .boutons button {
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
-    transition: all 0.3s ease;
     font-weight: bold;
 }
 

@@ -38,7 +38,7 @@
                 </select>
 
                 <label for="marqueVehicule">Marque (si voiture) :</label>
-                <select name="marque" id="marqueVehicule" required>
+                <select name="marque" id="marqueVehicule" >
                     <option value="">--Sélectionnez--</option>
                     <option value="tesla">Tesla</option>
                     <option value="toyota">Toyota</option>
@@ -47,7 +47,7 @@
                 </select>
 
                 <label for="modeleVehicule">Modèle :</label>
-                <select name="modele" id="modeleVehicule" required>
+                <select name="modele" id="modeleVehicule" >
                     <option value="">--Sélectionnez--</option>
                     <option value="electrique">Électrique</option>
                     <option value="hybride">Hybride</option>
@@ -56,7 +56,7 @@
                 </select>
 
                 <label for="optionsVehicule">Options :</label>
-                <select name="options" id="optionsVehicule" required>
+                <select name="options" id="optionsVehicule" >
                     <option value="">--Sélectionnez--</option>
                     <option value="gps">GPS</option>
                     <option value="climatisation">Climatisation</option>
@@ -66,11 +66,11 @@
 
                 <fieldset>
                     <legend>Vos informations</legend>
-                    <label for="nomEmploye">Nom & Prénom :</label>
-                    <input type="text" id="nomEmploye" name="nomEmploye" placeholder="Entrez votre nom" required>
+                    <label for="nom">Nom & Prénom :</label>
+                    <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]+$" maxlength="50" title="Le nom ne doit contenir que des lettres, des espaces, des apostrophes ou des tirets, et ne pas dépasser 50 caractères.">
 
                     <label for="numEmploye">Identifiant employé :</label>
-                    <input type="number" id="numEmploye" name="numEmploye" placeholder="Ex : 12345" required>
+                    <input type="text" id="numEmploye" name="numEmploye" placeholder="Ex : 12345" required pattern="\d{5}" title="L'identifiant doit contenir exactement 5 chiffres.">
                 </fieldset>
 
                 <fieldset>

@@ -172,6 +172,7 @@ footer > div > img {
 
 @media screen and (max-width: 500px) {
 
-    
-    
+    .option>button {
+        font-size: 0.9em;
+    }
 }
